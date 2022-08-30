@@ -3,7 +3,7 @@ import React from 'react';
 const Footer = () => {
   return (
     <footer>
-      Josh Lee
+      <a href='https://github.com/jleewebdev'>Josh Lee</a>
     </footer>
   );
 }

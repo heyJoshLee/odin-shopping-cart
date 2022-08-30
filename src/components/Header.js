@@ -1,12 +1,15 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Nav from './Nav';
-const Header = () => {
+const Header = ({ cart }) => {
   return (
     <div className='header'>
-      <div className='site-logo-container'>
-        Cool Products
-      </div>
-      <Nav />
+      <Link to='/'>
+        <div className='site-logo-container'>
+          Cool Products
+        </div>
+      </Link>
+      <Nav cart={cart} />
     </div>
   );
 }
